@@ -152,7 +152,7 @@ public class BlogFragment extends BaseListFragment {
 			holder.short_.setText(item.getShort_content());
 			String url = item.getHead_image_url().replaceAll("=small",
 					"=middle");
-			if (url.equals(null) || url.equals("")) {
+			if (url == null || url.equals("")) {
 				holder.img_thu.setVisibility(View.GONE);
 			} else {
 				holder.img_thu.setVisibility(View.VISIBLE);
